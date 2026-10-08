@@ -1,0 +1,33 @@
+# Secrets & Credentials
+.ftp-config.json
+ftp-config.json
+.env
+.env.*
+
+# AI Instructions, Project Memory & Planning (Strictly excluded)
+.agents/
+.claude/
+AGENTS.md
+CLAUDE.md
+PROJECT_MEMORY.md
+TROUBLESHOOTING.md
+CHANGELOG_AI.md
+TODO_AI.md
+
+# Build Tools, Packaging Scripts & Test Runners
+*.ps1
+scratch/
+tests/
+phpunit.xml
+.phpunit.cache/
+
+# Archives & Temporary files
+*.zip
+*.log
+
+# System & Editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/

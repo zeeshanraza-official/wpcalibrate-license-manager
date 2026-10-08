@@ -1,0 +1,310 @@
+/**
+ * WPCalibrate License Manager Admin Styles
+ */
+
+/* Admin menu icon sizing */
+#adminmenu .toplevel_page_wpcalibrate .wp-menu-image img,
+#adminmenu .toplevel_page_wpcalibrate .wp-menu-image svg {
+	width: 20px;
+	height: 20px;
+	padding: 8px 0;
+	box-sizing: content-box;
+}
+
+.wpcalibrate-lm-wrap {
+	margin-top: 15px;
+	max-width: 1300px;
+}
+
+.wpcalibrate-header-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #ffffff;
+	padding: 16px 24px;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	margin-bottom: 16px;
+}
+
+.wpcalibrate-branding {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.wpcalibrate-logo-icon {
+	width: 36px;
+	height: auto;
+	max-height: 36px;
+	object-fit: contain;
+}
+
+.wpcalibrate-title-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.wpcalibrate-main-title {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 600;
+	color: #1d2327;
+	line-height: 1.2;
+}
+
+.wpcalibrate-version-badge {
+	background: #f0f0f1;
+	color: #50575e;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 8px;
+	border-radius: 12px;
+	border: 1px solid #dcdcde;
+}
+
+.wpcalibrate-nav-tabs {
+	margin-bottom: 20px;
+}
+
+.wpcalibrate-card {
+	background: #ffffff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	margin-bottom: 20px;
+}
+
+.wpcalibrate-card h2 {
+	margin-top: 0;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #f0f0f1;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.wpcalibrate-dashboard-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 16px;
+	margin-bottom: 24px;
+}
+
+.wpcalibrate-stat-card {
+	background: #ffffff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.wpcalibrate-stat-card .stat-number {
+	font-size: 32px;
+	font-weight: 700;
+	color: #2271b1;
+	line-height: 1;
+}
+
+.wpcalibrate-stat-card .stat-label {
+	font-size: 13px;
+	color: #646970;
+	font-weight: 500;
+}
+
+.wpcalibrate-two-col {
+	display: grid;
+	grid-template-columns: 2fr 1.2fr;
+	gap: 24px;
+	align-items: start;
+}
+
+@media screen and (max-width: 960px) {
+	.wpcalibrate-two-col {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Status Badges */
+.wpcalibrate-status-badge {
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 8px;
+	border-radius: 3px;
+	text-transform: capitalize;
+}
+
+.status-active {
+	background: #d1e7dd;
+	color: #0f5132;
+}
+
+.status-expired {
+	background: #fff3cd;
+	color: #664d03;
+}
+
+.status-suspended {
+	background: #e2d9f3;
+	color: #432874;
+}
+
+.status-revoked, .status-disabled {
+	background: #f8d7da;
+	color: #842029;
+}
+
+.wpcalibrate-badge-lifetime {
+	background: #cfe2ff;
+	color: #084298;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+.wpcalibrate-badge-staging {
+	background: #e2e3e5;
+	color: #41464b;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+.wpcalibrate-badge-production {
+	background: #d1e7dd;
+	color: #0f5132;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+.wpcalibrate-action-group {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.wpcalibrate-contact-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+	.wpcalibrate-contact-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.wpcalibrate-contact-channel h3 {
+	margin-top: 0;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+.wpcalibrate-admin-footer {
+	margin-top: 30px;
+	padding: 15px 0;
+	border-top: 1px solid #dcdcde;
+	color: #646970;
+	font-size: 12px;
+}
+
+/* Overview Tab Styles */
+.wpcalibrate-hero-card {
+	background: linear-gradient(135deg, #f8f9fa 0%, #edf2f7 100%);
+	border-left: 4px solid #2271b1;
+	padding: 24px 28px;
+}
+
+.wpcalibrate-pill-badge {
+	display: inline-block;
+	background: #2271b1;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 2px 10px;
+	border-radius: 12px;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.wpcalibrate-lead {
+	font-size: 15px;
+	color: #50575e;
+	line-height: 1.6;
+	margin-bottom: 0;
+}
+
+.wpcalibrate-workflow-steps {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.wpcalibrate-step-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 16px;
+	padding: 14px 18px;
+	background: #f8f9fa;
+	border: 1px solid #e2e4e7;
+	border-radius: 4px;
+}
+
+.wpcalibrate-step-number {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #2271b1;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size: 15px;
+	flex-shrink: 0;
+}
+
+.wpcalibrate-step-text h4 {
+	margin: 0 0 4px 0;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+.wpcalibrate-step-text p {
+	margin: 0;
+	color: #646970;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+/* RTL Support */
+body.rtl .wpcalibrate-lm-wrap {
+	direction: rtl;
+	text-align: right;
+}
+
+body.rtl .wpcalibrate-branding {
+	flex-direction: row-reverse;
+}
+
+body.rtl .wpcalibrate-contact-header img {
+	margin-right: 0 !important;
+	margin-left: 15px !important;
+}
+
+body.rtl .wpcalibrate-step-item {
+	flex-direction: row-reverse;
+}
